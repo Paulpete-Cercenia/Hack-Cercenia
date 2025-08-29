@@ -8,7 +8,6 @@
 - 🚀 Airdrop: OneiAirdrop — rewards dreamers, not farmers
 - 🤖 AI Oracle: OneiroNet AI scores dreams for novelty, emotion, coherence
 - 📦 Deploy: `npx hardhat deploy --network skale_europa`
-- 🎨 NFTs: "The DreamKey", "The Lucid Gate", "The Onei-Hacker"
 
 👉 **Vision**: When the world sleeps, the economy wakes.
 
