@@ -1,0 +1,75 @@
+dream-ecosystem/
+│
+├── 📄 README.md                     → The Living Manifesto
+├── 📄 LICENSE                       → ONEIRO-1.0 (Dream-Shared License)
+├── 📄 CODE_OF_CONDUCT.md            → Ethical Hacking Guidelines
+├── 📄 SECURITY.md                   → Bug Bounty & Audit Policy
+│
+├── 📁 contracts/                    → Smart Contracts (Solidity)
+│   ├── 📄 DreamToken.sol           → ERC-20 with Dream Mining
+│   ├── 📄 MindToken.sol            → Cognitive Staking Token
+│   ├── 📄 LucidToken.sol           → Access Key Token (ERC-777)
+│   ├── 📄 OneiAirdrop.sol          → Resonance-Based Airdrop
+│   ├── 📄 MindNodeStaking.sol      → Stake $MIND → Run AI Agents
+│   └── 📄 LucidGate.sol            → Burn $LUCID → Enter Future-Prediction Arena
+│
+├── 📁 deploy/                       → Hardhat Deployment Scripts
+│   ├── 📄 00_deploy_dream.js       → Deploy $DREAM
+│   ├── 📄 01_deploy_airdrop.js     → Deploy OneiAirdrop
+│   ├── 📄 02_deploy_mind.js        → Deploy $MIND & Staking
+│   ├── 📄 03_deploy_lucid.js       → Deploy $LUCID & Gate
+│   └── 📄 utils.js                 → Helper: Wait, Verify, Log
+│
+├── 📁 test/                         → Full Test Suite (Hardhat)
+│   ├── 📄 DreamToken.test.js       → Mint, Submit, Validate
+│   ├── 📄 OneiAirdrop.test.js      → Claim, Oracle, Void Key
+│   ├── 📄 MindNode.test.js         → Stake, Earn, Evolve
+│   └── 📄 LucidGate.test.js        → Enter, Predict, Win
+│
+├── 📁 scripts/                      → External Scripts
+│   ├── 📄 submitDream.js           → User: Submit keccak256(dream)
+│   ├── 📄 validateDream.js         → Oracle: Call validateDream()
+│   ├── 📄 claimAirdrop.js          → User: Claim $DREAM
+│   └── 📄 simulateFuture.js        → Onei-Hacker: Extract 100x signal
+│
+├── 📁 config/                       → Network & AI Config
+│   ├── 📄 hardhat.config.js        → SKALE Europa, Mumbai, Local
+│   ├── 📄 networks.json            → RPC URLs, Chain IDs
+│   ├── 📄 addresses.json           → Deployed Contract Addresses
+│   └── 📄 ai-oracle-config.json    → Webhook, Event Listeners, Model
+│
+├── 📁 frontend/                     → dApp (React + Web3Modal)
+│   ├── 📁 public/
+│   │   └── 📄 index.html
+│   ├── 📁 src/
+│   │   ├── 📄 App.jsx              → Main Interface
+│   │   ├── 📄 DreamForm.jsx        → Submit Dream Hash
+│   │   ├── 📄 AirdropClaim.jsx     → Claim $DREAM
+│   │   ├── 📄 Dashboard.jsx        → Track MindNodes, Lucid Gates
+│   │   └── 📄 walletConnect.js     → SKALE + MetaMask Integration
+│   └── 📄 package.json
+│
+├── 📁 nfts/                         → AI-Generated NFT Collection
+│   ├── 📄 DreamKey.prompt.txt      → "Liquid silver key with neural circuits..."
+│   ├── 📄 LucidGate.prompt.txt     → "Portal made of blockchain blocks..."
+│   ├── 📄 OneiHacker.prompt.txt    → "Cyber-samurai with data spear..."
+│   ├── 📁 metadata/                → ERC-721 Metadata (JSON)
+│   └── 📁 images/                  → Placeholder or AI outputs
+│
+├── 📁 docs/                         → Developer & User Guides
+│   ├── 📄 ARCHITECTURE.md          → System Overview
+│   ├── 📄 DREAM_MINING.md          → How to Mine with Your Mind
+│   ├── 📄 ONEI-AIRDROP.md          → Eligibility & Claim Guide
+│   ├── 📄 SECURITY_AUDIT.md        → Audit Status & Findings
+│   └── 📄 FUTURE_ROADMAP.md        → Q3 2025: Dream-Fi, Neural Swap
+│
+├── 📁 ai/                           → OneiroNet AI Integration
+│   ├── 📄 dream_validator.py       → Python script: Score dreams (novelty, emotion)
+│   ├── 📄 event_listener.py        → Listen to DreamSubmitted → Call validateDream()
+│   ├── 📄 future_simulator.py      → Simulate 100x paths from dream data
+│   └── 📄 training_data/           → dream_hashes_2025.json, thought_nfts.json
+│
+├── 📄 .gitignore                    → node_modules, .env, wallet keys
+├── 📄 .env                          → PRIVATE_KEY, INFURA_KEY, AI_API_KEY
+├── 📄 package.json                  → Hardhat, React, ethers, dotenv
+└── 📄 hardhat.config.js             → Main config (imported from /config)
