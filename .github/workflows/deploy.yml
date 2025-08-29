@@ -1,0 +1,33 @@
+name: Deploy Dream Ecosystem
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Compile contracts
+        run: npx hardhat compile
+
+      - name: Deploy to SKALE Europa
+        env:
+          SKALE_PRIVATE_KEY: ${{ secrets.SKALE_PRIVATE_KEY }}
+          SKALE_RPC_URL: ${{ secrets.SKALE_RPC_URL }}
+        run: |
+          npx hardhat run deploy.js --network skale_europa
