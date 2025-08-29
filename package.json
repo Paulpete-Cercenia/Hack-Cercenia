@@ -1,0 +1,15 @@
+{
+  "name": "dream-ecosystem",
+  "version": "1.0.0",
+  "description": "$DREAM - Dream Mining on SKALE",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "deploy": "npx hardhat run deploy.js --network skale_europa"
+  },
+  "devDependencies": {
+    "hardhat": "^2.11.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "ethers": "^6.0.0"
+  }
+}
